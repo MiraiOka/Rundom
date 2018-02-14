@@ -1,25 +1,13 @@
-//
-//  ViewController.swift
-//  Rundom
-//
-//  Created by 実来 on 2018/02/15.
-//  Copyright © 2018年 Mirai. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var rundomLabel: UILabel!
+    
+    let ordinalNumber = ["1", "2", "3"]
+    let direction = ["を真っ直ぐ", "を左折", "を右折", "で引き返す"]
+    
+    @IBAction func didTapRunButton(_ sender: UIButton) {
+        rundomLabel.text = ordinalNumber[Int(arc4random_uniform(UInt32(ordinalNumber.count)))] + "つ目の交差点" + direction[Int(arc4random_uniform(UInt32(direction.count)))]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
