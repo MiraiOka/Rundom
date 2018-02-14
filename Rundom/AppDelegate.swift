@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Rundom
-//
-//  Created by 実来 on 2018/02/15.
-//  Copyright © 2018年 Mirai. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
